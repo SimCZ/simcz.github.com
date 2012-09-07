@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	overflow-y: auto;
+	font-family: Arial;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -9,12 +14,34 @@ body {
 	min-width: 800px;
 }
 
+#mask {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
 #logo {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -150px;
 	margin-left: -300px;
+}
+
+header {
+	-moz-box-shadow: 0 2px 5px #111;
+	-webkit-box-shadow: 0 2px 5px #111;
+	box-shadow: 0 2px 5px #111;
+	border-bottom: 1px #000 solid;
+	text-align: center;
+	color: #999;
+	height: 150px;
+	line-height: 150px;
+	font-size: 14px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background: #111;
 }
 
 footer {
